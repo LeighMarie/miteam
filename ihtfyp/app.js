@@ -23,6 +23,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
+//app.use('/public/js',express.static(path.join(__dirname, '/public/scripts')));
+app.use(express.static('public'));
 
 app.use('/', routes);
 app.use('/users', users);
