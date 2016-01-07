@@ -6,3 +6,10 @@ body {
 a {
   color: #00B7FF;
 }
+
+.panning {
+    width: auto; // Span to the full width of container
+    height: 300px;
+    background: url('background.png');
+}
+
