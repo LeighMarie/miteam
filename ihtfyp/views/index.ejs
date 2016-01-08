@@ -15,6 +15,7 @@
     <p>Welcome to <%= title %></p> -->
     <div id="panning" class="panning" ></div>
     <div id= "homeModal" class="modal fade" tabindex="-1" role="dialog">
+      <!-- Bootstrap modal template -->
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header" style = "text-align:center">
@@ -22,7 +23,7 @@
             <h4 class="modal-title"></h4>
           </div>
           <div class="modal-body" >
-            <!-- BOOTSTRAP TEMPLATE-->
+            <!-- Bootstrap form template-->
             <form class="form-signin">
               <h2 class="form-signin-heading" style="text-align:center">Please sign in</h2>
               <label for="inputEmail" class="sr-only">Email address</label>
@@ -43,10 +44,12 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
   </body>
-    <!-- <img src= "/images/background.png"> -->
+   <!-- End Bootstrap form template -->
+   <!-- End Bootstrap modal template -->
   <script type="text/javascript">
   // Panning
   var element = document.querySelector('#panning');
+  /* code from Motio */
   var panning = new Motio(element, {
     fps: 30, // Frames per second. More fps = higher CPU load.
     speedX: -50, // Negative horizontal speed = panning to left.
